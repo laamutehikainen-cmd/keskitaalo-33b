@@ -556,8 +556,10 @@ a {
 
 .quick-card {
   position: relative;
-  min-height: 290px;
-  padding: 26px;
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  padding: 24px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   text-decoration: none;
@@ -570,21 +572,36 @@ a {
 }
 
 .quick-number {
-  color: var(--forest-500);
-  font-size: 0.7rem;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  color: var(--paper);
+  background: var(--forest-900);
+  border-radius: 50%;
+  font-size: 0.82rem;
   font-weight: 800;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.08em;
+  transition: color 180ms ease, background 180ms ease;
 }
 
 .quick-arrow {
   position: absolute;
-  top: 22px;
+  top: 25px;
   right: 24px;
-  font-size: 1.25rem;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 1;
+  transition: color 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
 .quick-card h3 {
-  margin-top: 105px;
+  margin-top: auto;
   margin-bottom: 12px;
   font-family: var(--serif);
   font-size: 1.75rem;
@@ -596,9 +613,15 @@ a {
   color: var(--muted);
 }
 
-.quick-card:hover p,
-.quick-card:hover .quick-number {
+.quick-card:hover p {
   color: rgba(255, 253, 248, 0.68);
+}
+
+.quick-card:hover .quick-number,
+.quick-card:hover .quick-arrow {
+  color: var(--forest-950);
+  background: var(--paper);
+  border-color: var(--paper);
 }
 
 .guide-section {
@@ -1297,8 +1320,47 @@ a {
   .section-heading h2 { font-size: clamp(2.6rem, 13vw, 4.2rem); }
 
   .quick-grid { grid-template-columns: 1fr; }
-  .quick-card { min-height: 210px; }
-  .quick-card h3 { margin-top: 58px; }
+  .quick-card {
+    display: grid;
+    min-height: 0;
+    grid-template-areas:
+      "number title arrow"
+      "number copy arrow";
+    grid-template-columns: 52px minmax(0, 1fr) 42px;
+    align-items: center;
+    gap: 5px 15px;
+    padding: 21px 18px;
+  }
+
+  .quick-number {
+    grid-area: number;
+    width: 52px;
+    height: 52px;
+    font-size: 0.9rem;
+  }
+
+  .quick-arrow {
+    position: static;
+    grid-area: arrow;
+    justify-self: end;
+  }
+
+  .quick-card h3 {
+    grid-area: title;
+    align-self: end;
+    min-width: 0;
+    margin: 0;
+    font-size: clamp(1.4rem, 6.5vw, 1.7rem);
+    line-height: 1.08;
+  }
+
+  .quick-card p {
+    grid-area: copy;
+    align-self: start;
+    min-width: 0;
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
 
   .instruction-grid,
   .season-grid,

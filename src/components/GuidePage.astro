@@ -55,7 +55,7 @@ const leviHref = withBase(content.locale === "fi" ? "/levi/" : "/en/levi/");
       {content.quickActions.map((action) => (
         <a class="quick-card" href={`#${action.id}`}>
           <span class="quick-number">{action.number}</span>
-          <span class="quick-arrow" aria-hidden="true">↘</span>
+          <span class="quick-arrow" aria-hidden="true">↓</span>
           <h3>{action.title}</h3>
           <p>{action.detail}</p>
         </a>
