@@ -45,6 +45,10 @@ sections:
     title: Park in front of the cabin
     intro: There is one parking space directly in front of the cabin.
     tone: light
+    image:
+      src: /images/parking-illustration.jpg
+      alt: AI-generated illustration of a dark-brown cabin frontage and its gravel parking area.
+      caption: "AI-generated illustration: park one car on the gravel area directly in front of the cabin."
     items:
       - id: parking
         title: Where to park

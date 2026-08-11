@@ -45,6 +45,10 @@ sections:
     title: Auto mökin edustalle
     intro: Mökin edustalla on pysäköintipaikka yhdelle autolle.
     tone: light
+    image:
+      src: /images/parking-illustration.jpg
+      alt: Tekoälyllä tuotettu havainnekuva tummanruskean mökin edustasta ja sorapintaisesta pysäköintialueesta.
+      caption: "Havainnekuva (tekoälyllä tuotettu): pysäköi yksi auto mökin edessä olevalle sorapintaiselle paikalle."
     items:
       - id: parking
         title: Näin pysäköit
