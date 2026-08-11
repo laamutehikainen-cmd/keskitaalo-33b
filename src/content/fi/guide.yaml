@@ -104,7 +104,7 @@ sections:
         title: Kuivauskaappi
         body: Tarkista tekstiilien pesu- ja kuivausmerkinnät ennen kuivauskaapin käyttöä.
         steps:
-          - Ravistele märät vaatteet ja ripusta ne väljästi niin, että ilma pääsee kiertämään.
+          - Ripusta märät vaatteet väljästi niin, että ilma pääsee kiertämään.
           - Älä kuivaa kaapissa öljyn, polttoaineen tai muiden helposti syttyvien aineiden likaamia tekstiilejä.
           - Sulje ovet, valitse paneelista maltillinen lämpö ja sopiva kuivausaika.
           - Sammuta kaappi käytön jälkeen äläkä jätä sitä käyntiin mökiltä poistuessasi.
@@ -133,7 +133,7 @@ sections:
     items:
       - id: neighbours
         title: Naapurit ja äänet
-        body: Kunnioita alueen rauhaa ja pidä etenkin ilta- ja yöaikaan musiikki sekä keskustelu sisätiloihin sopivalla tasolla.
+        body: Kunnioita alueen rauhaa ja pidä etenkin ilta- ja yöaikaan musiikki sisätiloihin sopivalla tasolla.
       - id: smoking
         title: Tupakointi
         body: Tupakointi mökin sisätiloissa on kielletty.

@@ -104,7 +104,7 @@ sections:
         title: Drying cabinet
         body: Check each garment's care label before using the drying cabinet.
         steps:
-          - Shake out wet clothes and hang them loosely so air can circulate.
+          - Hang wet clothes loosely so air can circulate.
           - Never dry textiles contaminated with oil, fuel or other flammable substances.
           - Close the doors and select a moderate temperature and suitable drying time from the panel.
           - Switch the cabinet off after use and never leave it running when you leave the cabin.
@@ -133,7 +133,7 @@ sections:
     items:
       - id: neighbours
         title: Neighbours and noise
-        body: Respect the calm of the area. Keep music and conversation at a considerate indoor level, especially during the evening and night.
+        body: Respect the calm of the area. Keep music at a considerate indoor level, especially during the evening and night.
       - id: smoking
         title: Smoking
         body: Smoking inside the cabin is prohibited.
