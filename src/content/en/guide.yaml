@@ -20,7 +20,7 @@ hero:
   secondaryAction: Discover Levi
   locationLabel: 67°48′ N · Sirkka, Levi
 quickTitle: Cabin instructions
-quickIntro: Go straight to the guidance you need. Appliance-specific photographs and exact controls will be added in the next update.
+quickIntro: Go straight to the guidance you need.
 quickActions:
   - id: parking
     number: "01"
@@ -37,7 +37,7 @@ quickActions:
   - id: departure
     number: "04"
     title: Departure
-    detail: A simple final check before locking the door.
+    detail: Dishes, rubbish, appliances, locking up and keys.
 sections:
   - id: parking
     number: "01"
@@ -63,7 +63,6 @@ sections:
       - id: heating
         title: Heating
         body: Normally, leave radiators and thermostats at their current settings. Never cover radiators or dry clothes on them.
-        note: Recommended thermostat settings and any underfloor heating controls will be specified later.
       - id: ventilation
         title: Mechanical ventilation
         body: The cabin's extract ventilation is controlled from the cooker hood. Normally, keep it at its basic setting.
@@ -72,17 +71,15 @@ sections:
           - When lighting the fireplace, open at least one ventilation window or set the cooker hood ventilation to zero.
           - Do not use strong extraction while lighting the fireplace, as negative pressure may draw smoke indoors.
           - Return ventilation to its normal basic setting afterwards.
-        note: Photographs of the cooker hood controls and exact settings will be added later.
       - id: sauna
         title: Sauna
         body: The sauna has a standard electric heater operated from its control panel.
         steps:
           - Before switching it on, make sure there are no textiles or other items on or close to the heater.
-          - Switch the heater on at the panel and choose a suitable sauna temperature. Do not use delayed starting until exact instructions have been added.
+          - Switch the heater on at the panel and choose a suitable sauna temperature. Do not use delayed starting.
           - Increase the mechanical ventilation from the cooker hood control while using the sauna.
           - Pour water moderately and only onto the sauna stones. Keep water away from electrical parts and the control panel.
           - Switch the heater off after use and leave the sauna door ajar while the room dries.
-        note: The panel buttons and recommended settings will be documented with photographs later.
       - id: fireplace
         title: Fireplace, damper and ashes
         body: Prepare the ventilation and fireplace before every fire. Never leave a fire unattended.
@@ -93,7 +90,6 @@ sections:
           - Use only the dry firewood provided, burn a moderate load and keep the fireplace door closed.
           - Never close the damper while anything in the fireplace is burning, glowing or smouldering. Close it only after the fire and embers are completely out.
           - Never move hot ashes or embers into the metal container.
-        note: Photographs of the damper, ventilation window, ventilation control and ash container will be added later.
   - id: appliances
     number: "03"
     kicker: Appliances
@@ -109,7 +105,6 @@ sections:
           - Never dry textiles contaminated with oil, fuel or other flammable substances.
           - Close the doors and select a moderate temperature and suitable drying time from the panel.
           - Switch the cabinet off after use and never leave it running when you leave the cabin.
-        note: Panel buttons, programmes and recommended times will be specified for the exact appliance model.
       - id: dishwasher
         title: Dishwasher
         body: Remove food scraps and make sure the spray arms can rotate freely before starting the machine.
@@ -118,7 +113,6 @@ sections:
           - Use dishwasher detergent only. Never use washing-up liquid intended for hand washing.
           - Choose a normal wash programme and start only after the door is properly closed.
           - Run the machine only while you are at the cabin and leave the clean machine slightly open afterwards.
-        note: Programme selection and the start button will be documented with photographs.
       - id: washing-machine
         title: Washing machine
         body: Empty pockets, close zips and follow each textile's care label.
@@ -127,42 +121,47 @@ sections:
           - Choose a programme and temperature suitable for the textiles.
           - Make sure the door is closed before starting. Never force open a locked door.
           - Run the machine only while you are at the cabin and leave the door ajar after washing so it can dry.
-        note: Detergent compartments, programmes and starting controls will be specified for the exact appliance model.
   - id: rules
     number: "04"
     kicker: Shared peace
     title: Care for the cabin and the surrounding nature
-    intro: These instructions apply specifically to Keskitaalo 33B.
+    intro: Be considerate of the neighbours, the cabin and the surrounding nature throughout your stay.
     tone: soft
     items:
       - id: neighbours
         title: Neighbours and noise
         body: Respect the calm of the area. Keep music and conversation at a considerate indoor level, especially during the evening and night.
-      - id: smoking-pets-guests
-        title: Smoking, pets and visitors
-        body: Smoking inside the cabin is prohibited. Guidance concerning pets and visitors who are not staying at the cabin will be specified later.
+      - id: smoking
+        title: Smoking
+        body: Smoking inside the cabin is prohibited.
       - id: outdoors
         title: Nature and the yard
         body: Leave no litter outdoors. Make a fire only at designated sites and never when a forest or grass fire warning is in effect.
   - id: departure
     number: "05"
     kicker: Before departure
-    title: Leave the cabin ready for tomorrow
-    intro: Complete a calm final check. The departure time and exact key return procedure will be added to this guide.
+    title: Leave the cabin in good condition
+    intro: Check out by the time shown in your reservation and complete these few tasks before leaving.
     tone: dark
     items:
       - id: kitchen
         title: Kitchen
-        body: Wash the dishes or start a full dishwasher. Remove your own food and wipe away visible spills.
+        body: Wash the dishes or start the dishwasher well before departure. Do not leave it running when the cabin is empty. Remove your own food and wipe away visible spills.
       - id: waste
         title: Waste
-        body: Sort and take rubbish to the correct bins. Exact sorting and waste collection guidance will be added later.
+        body: Sort and take rubbish to the designated bins before departure. Do not leave rubbish inside the cabin or outdoors.
       - id: final-check
         title: Final check
         body: Switch off lights and appliances, close windows and taps, and make sure the sauna heater is off. No fire or smouldering embers may remain in the fireplace, and the damper must not be closed while combustion continues.
       - id: key
-        title: Doors and key
-        body: Close and lock the doors when leaving. The exact key return procedure will be added to this guide.
+        title: Keys and locking up
+        body: Use the key in the coded lockbox beside the front door only to enter the cabin and to lock the door when leaving. Return it to the lockbox immediately after each use. During your stay, use the cabin key found on the dining table.
+        steps:
+          - On arrival, unlock the front door with the lockbox key and return it to the lockbox immediately.
+          - Close the lockbox, scramble the code and pull it gently to make sure it is locked.
+          - Use the key found on the dining table during your stay.
+          - Before departure, return the key you have been using to the dining table.
+          - On departure, take the lockbox key, lock the front door and return the key to the box immediately. Make sure the box is securely locked.
 emergency:
   eyebrow: Emergency
   title: Act first, notify afterwards
@@ -183,4 +182,4 @@ contact:
   note: In an emergency, always call 112 first.
 footer:
   updatedLabel: Guide reviewed
-  privacy: This guide contains no WiFi credentials, door codes or personal contact details.
+  privacy: Enjoy your stay in Levi.

@@ -20,7 +20,7 @@ hero:
   secondaryAction: Tutustu Leviin
   locationLabel: 67°48′ N · Sirkka, Levi
 quickTitle: Mökin ohjeet
-quickIntro: Siirry suoraan tarvitsemaasi ohjeeseen. Tarkat laitekohtaiset kuvat ja painikkeet lisätään oppaaseen seuraavassa täydennyksessä.
+quickIntro: Siirry suoraan tarvitsemaasi ohjeeseen.
 quickActions:
   - id: parking
     number: "01"
@@ -37,7 +37,7 @@ quickActions:
   - id: departure
     number: "04"
     title: Lähtö
-    detail: Helppo loppukierros ennen oven lukitsemista.
+    detail: Astiat, roskat, laitteet, lukitus ja avaimet.
 sections:
   - id: parking
     number: "01"
@@ -63,7 +63,6 @@ sections:
       - id: heating
         title: Lämmitys
         body: Pidä patterit ja termostaatit normaalisti nykyisissä asetuksissaan. Älä peitä pattereita tai kuivata niiden päällä vaatteita.
-        note: Termostaattien suositusasetukset ja mahdolliset lattialämmityksen säädöt täsmennetään.
       - id: ventilation
         title: Koneellinen ilmanvaihto
         body: Mökin poistoilmanvaihtoa säädetään liesikuvusta. Pidä ilmanvaihto tavallisesti perusasetuksella.
@@ -72,17 +71,15 @@ sections:
           - Takan sytyttämisen ajaksi avaa vähintään tuuletusikkuna tai säädä liesikuvun ilmanvaihto nollalle.
           - Älä käytä voimakasta poistoa takkaa sytyttäessä, sillä alipaine voi tuoda savua sisälle.
           - Palauta ilmanvaihto normaalille perusasetukselle käytön jälkeen.
-        note: Liesikuvun säätimien kuvat ja tarkat asennot lisätään myöhemmin.
       - id: sauna
         title: Sauna
         body: Saunassa on tavallinen sähkökiuas, jota käytetään käyttöpaneelista.
         steps:
           - Tarkista ennen käynnistystä, ettei kiukaan päällä tai lähellä ole tekstiilejä tai muuta tavaraa.
-          - Käynnistä kiuas paneelista ja valitse sopiva saunomislämpötila. Älä käytä ajastettua käynnistystä ilman tarkennettua ohjetta.
+          - Käynnistä kiuas paneelista ja valitse sopiva saunomislämpötila. Älä käytä ajastettua käynnistystä.
           - Tehosta koneellista ilmanvaihtoa saunomisen ajaksi liesikuvun säätimestä.
           - Heitä vettä vain kiuaskiville maltillisesti. Älä kastele sähköosia tai käyttöpaneelia.
           - Sammuta kiuas saunomisen jälkeen ja jätä saunan ovi raolleen kuivumisen ajaksi.
-        note: Käyttöpaneelin painikkeet ja suositusasetukset dokumentoidaan kuvallisesti myöhemmin.
       - id: fireplace
         title: Takka, pellit ja tuhkat
         body: Valmistele ilmanvaihto ja takka ennen jokaista sytytystä. Älä jätä tulta koskaan ilman valvontaa.
@@ -93,7 +90,6 @@ sections:
           - Käytä vain mökille varattuja kuivia polttopuita, polta maltillinen pesällinen ja pidä takan luukku suljettuna.
           - Älä sulje peltiä missään tilanteessa, jos takassa on vielä palavaa, hehkuvaa tai kytevää ainesta. Sulje pelti vasta, kun tuli ja hiillos ovat varmasti täysin sammuneet.
           - Älä koskaan siirrä kuumaa tuhkaa tai kekäleitä metalliastiaan.
-        note: Pellin, tuuletusikkunan, ilmanvaihtosäätimen ja tuhka-astian kuvat lisätään myöhemmin.
   - id: appliances
     number: "03"
     kicker: Kodinkoneet
@@ -109,7 +105,6 @@ sections:
           - Älä kuivaa kaapissa öljyn, polttoaineen tai muiden helposti syttyvien aineiden likaamia tekstiilejä.
           - Sulje ovet, valitse paneelista maltillinen lämpö ja sopiva kuivausaika.
           - Sammuta kaappi käytön jälkeen äläkä jätä sitä käyntiin mökiltä poistuessasi.
-        note: Paneelin painikkeet, ohjelmat ja suositusajat täsmennetään laitemallin mukaan.
       - id: dishwasher
         title: Astianpesukone
         body: Poista ruoantähteet astioista ja varmista ennen käynnistystä, että suihkuvarret pääsevät pyörimään.
@@ -118,7 +113,6 @@ sections:
           - Käytä vain astianpesukoneeseen tarkoitettua pesuainetta. Älä käytä käsitiskiainetta.
           - Valitse tavallinen pesuohjelma ja käynnistä kone vasta, kun luukku on kunnolla suljettu.
           - Käytä konetta vain mökillä ollessasi ja jätä puhdas kone hieman raolleen käytön jälkeen.
-        note: Ohjelman valinta ja käynnistyspainike täsmennetään kuvallisella ohjeella.
       - id: washing-machine
         title: Pyykinpesukone
         body: Tarkista taskut, sulje vetoketjut ja noudata tekstiilien pesumerkintöjä.
@@ -127,42 +121,47 @@ sections:
           - Valitse tekstiileille sopiva ohjelma ja lämpötila.
           - Varmista, että luukku on suljettu ennen käynnistystä. Älä pakota lukittua luukkua auki.
           - Käytä konetta vain mökillä ollessasi ja jätä luukku pesun jälkeen raolleen kuivumista varten.
-        note: Pesuainelokerot, ohjelmat ja käynnistys täsmennetään laitemallin mukaan.
   - id: rules
     number: "04"
     kicker: Yhteinen rauha
     title: Pidetään mökistä ja luonnosta huolta
-    intro: Nämä ohjeet koskevat nimenomaan Keskitaalo 33B:tä.
+    intro: Huomioi naapurit, mökki ja ympäröivä luonto koko vierailun ajan.
     tone: soft
     items:
       - id: neighbours
         title: Naapurit ja äänet
         body: Kunnioita alueen rauhaa ja pidä etenkin ilta- ja yöaikaan musiikki sekä keskustelu sisätiloihin sopivalla tasolla.
-      - id: smoking-pets-guests
-        title: Tupakointi, lemmikit ja vieraat
-        body: Tupakointi mökin sisätiloissa on kielletty. Lemmikkejä ja mökin ulkopuolisia vieraita koskevaa ohjetta täsmennetään.
+      - id: smoking
+        title: Tupakointi
+        body: Tupakointi mökin sisätiloissa on kielletty.
       - id: outdoors
         title: Luonto ja piha
         body: Älä jätä roskia luontoon. Avotulta saa tehdä vain sallituilla paikoilla ja ainoastaan silloin, kun voimassa ei ole metsä- tai ruohikkopalovaroitusta.
   - id: departure
     number: "05"
     kicker: Ennen lähtöä
-    title: Jätä mökki hyvään huomiseen
-    intro: Tee rauhallinen loppukierros. Lähtöaika ja avaimen palautustapa täsmennetään tähän oppaaseen.
+    title: Jätä mökki hyvään kuntoon
+    intro: Noudata varauksessa ilmoitettua uloskirjautumisaikaa ja tee ennen lähtöä nämä muutamat asiat.
     tone: dark
     items:
       - id: kitchen
         title: Keittiö
-        body: Tiskaa astiat tai käynnistä täysi astianpesukone. Tyhjennä omat ruoat ja pyyhi näkyvät roiskeet.
+        body: Pese astiat tai käynnistä astianpesukone hyvissä ajoin ennen lähtöä. Älä jätä konetta käyntiin mökin jäädessä tyhjäksi. Tyhjennä omat ruoat ja pyyhi näkyvät roiskeet.
       - id: waste
         title: Roskat
-        body: Lajittele ja vie roskat niille kuuluviin jäteastioihin. Tarkka lajittelu- ja jätepisteohje lisätään myöhemmin.
+        body: Lajittele ja vie roskat niille tarkoitettuihin jäteastioihin ennen lähtöä. Älä jätä roskia mökkiin tai pihalle.
       - id: final-check
         title: Viimeinen kierros
         body: Sammuta valot ja sähkölaitteet, sulje ikkunat sekä vesihanat ja varmista, että kiuas on pois päältä. Takkaan ei saa jäädä tulta tai kytevää hiillosta, eikä peltiä saa sulkea palamisen aikana.
       - id: key
-        title: Ovet ja avain
-        body: Sulje ja lukitse ovet lähtiessäsi. Avaimen täsmällinen palautusohje lisätään tähän oppaaseen.
+        title: Avaimet ja lukitus
+        body: Ulko-oven vieressä sijaitsevan numerokoodillisen avainlaatikon avainta käytetään vain sisäänpääsyyn ja oven lukitsemiseen lähtiessä. Palauta se jokaisen käyttökerran jälkeen avainlaatikkoon. Käytä vierailun aikana ruokapöydältä löytyvää avainta.
+        steps:
+          - Saapuessasi avaa ulko-ovi avainlaatikon avaimella ja palauta avain heti takaisin laatikkoon.
+          - Sulje avainlaatikko, sekoita numerot ja varmista kevyesti vetämällä, että laatikko on lukossa.
+          - Käytä vierailun aikana ruokapöydällä olevaa avainta.
+          - Lähtiessäsi jätä käytössä ollut avain takaisin ruokapöydälle.
+          - Ota lähtiessäsi avainlaatikon avain, lukitse sillä ulko-ovi ja palauta avain heti laatikkoon. Varmista vielä, että laatikko lukittui.
 emergency:
   eyebrow: Hätätilanne
   title: Toimi ensin, ilmoita sitten
@@ -183,4 +182,4 @@ contact:
   note: Hätätilanteessa soita aina ensin 112.
 footer:
   updatedLabel: Ohje tarkistettu
-  privacy: Tämä opas ei sisällä WiFi-tunnuksia, ovikoodeja tai henkilökohtaisia yhteystietoja.
+  privacy: Mukavaa lomaa Levillä.
