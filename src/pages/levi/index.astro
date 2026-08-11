@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import LeviPage from "../../components/LeviPage.astro";
+import { loadLevi } from "../../lib/content";
+
+const content = loadLevi("fi");
+---
+
+<BaseLayout title={content.meta.title} description={content.meta.description} locale="fi" page="levi" navigation={content.navigation}>
+  <LeviPage content={content} />
+</BaseLayout>

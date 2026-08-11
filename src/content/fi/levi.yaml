@@ -1,0 +1,83 @@
+locale: fi
+languageName: Suomi
+meta:
+  title: Koe Levi | Keskitaalo 33B
+  description: Ajattomia vinkkejä ja virallisia palveluita onnistuneeseen Levin lomaan.
+  updated: 2026-08-11
+navigation:
+  guide: Mökin opas
+  levi: Koe Levi
+  language: In English
+  menu: Valikko
+hero:
+  eyebrow: Tunturi kaikkina vuodenaikoina
+  title: Levi alkaa siitä, mihin kiire loppuu.
+  intro: >
+    Metsäpolut, tunturimaisemat ja Sirkan palvelut ovat osa samaa lomaa.
+    Tältä sivulta löydät ajattomat ideat ja suorat linkit ajantasaiseen tietoon.
+  backLabel: Takaisin mökin oppaaseen
+seasonsTitle: Neljä tapaa kokea pohjoinen
+seasonsIntro: Sää ja kaudet muuttuvat nopeasti. Tarkista aina reittien, hissien ja palveluiden tilanne virallisista lähteistä ennen lähtöä.
+seasons:
+  - id: winter
+    number: "01"
+    title: Talvi
+    body: Laskettelu, hiihto, talvikävely ja revontuli-illat täyttävät kaamoksen valolla. Pukeudu kerroksittain ja pidä puhelin lämpimänä.
+    accent: snow
+  - id: spring
+    number: "02"
+    title: Kevättalvi
+    body: Pitkät päivät ja kantavat hanget kutsuvat ulos. Aurinkolasit, juoma ja ajantasainen reittikartta kuuluvat retkelle.
+    accent: sun
+  - id: summer
+    number: "03"
+    title: Kesä ja ruska
+    body: Patikoi, pyöräile ja nauti yöttömästä yöstä tai ruskan väreistä. Sää voi vaihtua nopeasti myös lämpimänä päivänä.
+    accent: ember
+  - id: night
+    number: "04"
+    title: Hiljainen ilta
+    body: Joskus paras Levi löytyy mökin lähimetsästä, saunan lämmöstä ja hetkestä, jolloin taivas avautuu tunturin yllä.
+    accent: night
+linksTitle: Ajantasainen Levi taskussasi
+linksIntro: Näiltä virallisilta sivuilta löydät reitit, palvelut, varoitukset ja kausikohtaisen tilanteen.
+links:
+  - id: maps
+    title: Kartat ja reitit
+    body: Reaaliaikaiset latu-, pyöräily-, kävely- ja muut reittipalvelut sekä ladattavat kartat.
+    href: https://www.levi.fi/info/kartat-ja-reitit/
+    label: Avaa Levin reittipalvelut
+  - id: activities
+    title: Aktiviteetit
+    body: Hae ajankohtaista tekemistä vuodenajan, kiinnostuksen ja seurueen mukaan.
+    href: https://www.levi.fi/aktiviteetit/aktiviteettihaku?category=58052
+    label: Selaa aktiviteetteja
+  - id: tourist-info
+    title: Matkailuneuvonta
+    body: Paikalliset neuvot reitteihin, palveluihin, ravintoloihin ja lomaideoihin.
+    href: https://www.levi.fi/info/palvelut/opaspalvelut/
+    label: Ota yhteys matkailuneuvontaan
+  - id: recycling
+    title: Kierrätys ja ekopisteet
+    body: Ajantasaiset tiedot Levin lajittelusta ja alueen ekopisteistä.
+    href: https://www.levi.fi/info/vastuullinen-levi/kierratys-ja-ekopisteet/
+    label: Katso lajitteluohjeet
+nature:
+  eyebrow: Turvallisesti luonnossa
+  title: Tunturi palkitsee valmistautuneen
+  intro: Pieni suunnittelu tekee retkestä rennomman ja auttaa säilyttämään pohjoisen luonnon kauniina.
+  items:
+    - id: route
+      title: Suunnittele reitti
+      body: Valitse seurueelle sopiva reitti, kerro suunnitelmasi toiselle ja ota sähköisen kartan rinnalle varavirtalähde tai paperikartta.
+    - id: weather
+      title: Tarkista sää ja varoitukset
+      body: Pukeudu kerroksittain ja varaudu sään muutokseen. Tarkista metsä- ja ruohikkopalovaroitukset ennen tulentekoa.
+      href: https://www.ilmatieteenlaitos.fi/varoitukset
+      linkLabel: Ilmatieteen laitoksen varoitukset
+    - id: trace
+      title: Älä jätä jälkiä
+      body: Pysy merkityillä reiteillä, pidä etäisyyttä eläimiin ja tuo kaikki roskat pois luonnosta.
+footer:
+  updatedLabel: Ohje tarkistettu
+  privacy: Ulkoisten palveluiden sisältö ja aukioloajat voivat muuttua — tarkista ne aina palveluntarjoajalta.

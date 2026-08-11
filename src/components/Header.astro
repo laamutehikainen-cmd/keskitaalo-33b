@@ -1,0 +1,49 @@
+---
+import { withBase } from "../lib/content";
+
+interface Props {
+  locale: "fi" | "en";
+  page: "guide" | "levi";
+  navigation: {
+    guide: string;
+    levi: string;
+    language: string;
+    menu: string;
+  };
+}
+
+const { locale, page, navigation } = Astro.props;
+const guideHref = withBase(locale === "fi" ? "/" : "/en/");
+const leviHref = withBase(locale === "fi" ? "/levi/" : "/en/levi/");
+const languageHref = withBase(
+  locale === "fi"
+    ? page === "guide" ? "/en/" : "/en/levi/"
+    : page === "guide" ? "/" : "/levi/"
+);
+---
+
+<header class="site-header">
+  <div class="header-inner shell">
+    <a class="wordmark" href={guideHref} aria-label="Keskitaalo 33B">
+      <span class="wordmark-number">33B</span>
+      <span class="wordmark-name">Keskitaalo</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label={locale === "fi" ? "Päänavigaatio" : "Main navigation"}>
+      <a href={guideHref} aria-current={page === "guide" ? "page" : undefined}>{navigation.guide}</a>
+      <a href={leviHref} aria-current={page === "levi" ? "page" : undefined}>{navigation.levi}</a>
+      <a class="language-link" href={languageHref} lang={locale === "fi" ? "en" : "fi"}>
+        {navigation.language}<span aria-hidden="true"> ↗</span>
+      </a>
+    </nav>
+
+    <details class="mobile-nav">
+      <summary>{navigation.menu}<span class="menu-lines" aria-hidden="true"></span></summary>
+      <nav aria-label={locale === "fi" ? "Mobiilinavigaatio" : "Mobile navigation"}>
+        <a href={guideHref} aria-current={page === "guide" ? "page" : undefined}>{navigation.guide}</a>
+        <a href={leviHref} aria-current={page === "levi" ? "page" : undefined}>{navigation.levi}</a>
+        <a href={languageHref} lang={locale === "fi" ? "en" : "fi"}>{navigation.language}</a>
+      </nav>
+    </details>
+  </div>
+</header>

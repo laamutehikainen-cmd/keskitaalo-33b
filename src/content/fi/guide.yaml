@@ -1,0 +1,134 @@
+locale: fi
+languageName: Suomi
+meta:
+  title: Keskitaalo 33B | Mökin vierasopas
+  description: Keskitaalo 33B:n kaksikielinen vierasopas Levillä majoittuville.
+  updated: 2026-08-11
+navigation:
+  guide: Mökin opas
+  levi: Koe Levi
+  language: In English
+  menu: Valikko
+hero:
+  eyebrow: Vierasopas · Levi
+  title: Tervetuloa tunturin rauhaan.
+  subtitle: Keskitaalo 33B
+  intro: >
+    Täältä löydät tärkeimmät ohjeet sujuvaan oleskeluun, turvalliseen mökin käyttöön
+    ja onnistuneeseen lähtöön. Tarkat avain- ja sisäänkirjautumistiedot saat aina omasta varausviestistäsi.
+  primaryAction: Aloita pikaoppaasta
+  secondaryAction: Tutustu Leviin
+  locationLabel: 67°48′ N · Sirkka, Levi
+quickTitle: Kaikki tärkeä nopeasti
+quickIntro: Valitse tilanne — jokainen ohje löytyy myös alempaa yksityiskohtaisemmin.
+quickActions:
+  - id: arrival
+    number: "01"
+    title: Saapuminen
+    detail: Avain, pysäköinti ja ensimmäiset hetket.
+  - id: cabin
+    number: "02"
+    title: Mökin käyttö
+    detail: Lämmitys, sauna, takka ja keittiö.
+  - id: safety
+    number: "03"
+    title: Turvallisuus
+    detail: Osoite ja toiminta hätätilanteessa.
+  - id: departure
+    number: "04"
+    title: Lähtö
+    detail: Rauhallinen ja helppo lähtölista.
+sections:
+  - id: arrival
+    number: "01"
+    kicker: Kun saavut
+    title: Aloita loma levollisesti
+    intro: Varaa hetki varausviestin tarkistamiseen ennen kuin asetut taloksi.
+    tone: light
+    items:
+      - id: key
+        title: Avain ja sisäänkirjautuminen
+        body: Tarkista avaimen nouto tai mahdollinen ovikoodi omasta varausviestistäsi. Älä välitä kulkutietoja ulkopuolisille.
+        badge: Varausviesti
+      - id: parking
+        title: Pysäköinti
+        body: Noudata varausviestissä annettua pysäköintiohjetta ja jätä kulku naapuriasuntoihin sekä pelastustielle vapaaksi.
+      - id: settle
+        title: Kun asetut taloksi
+        body: Tarkista, että ovet ja ikkunat ovat ehjät. Ilmoita mahdollisista puutteista heti varauskanavan kautta, jotta ne voidaan hoitaa viipymättä.
+  - id: cabin
+    number: "02"
+    kicker: Mökin käyttö
+    title: Lämpöä, löylyä ja yhteisiä hetkiä
+    intro: Käytä laitteita rauhallisesti ja jätä niiden perusasetukset ennalleen.
+    tone: soft
+    items:
+      - id: heating
+        title: Lämmitys
+        body: Pidä patterit ja termostaatit nykyisissä asetuksissaan. Jos mökissä tuntuu poikkeuksellisen kylmältä tai kuumalta, ota yhteys majoittajaan varauskanavan kautta.
+      - id: sauna
+        title: Sauna
+        body: Älä kuivata tekstiilejä saunassa tai peitä kiuasta. Sammuta kiuas käytön jälkeen ja varmista, ettei löylyhuoneeseen jää mitään palavaa.
+      - id: fireplace
+        title: Takka
+        body: Käytä vain mökille varattuja polttopuita, pidä luukku suljettuna äläkä jätä tulta ilman valvontaa. Jos käyttö ei ole tuttua, pyydä tarkka ohje ennen sytyttämistä.
+      - id: kitchen
+        title: Keittiö ja astiat
+        body: Käytä kodinkoneita niiden merkintöjen mukaisesti. Älä jätä uunia tai liettä päälle ilman valvontaa ja laita astianpesukone päälle vain, kun olet mökillä.
+  - id: rules
+    number: "03"
+    kicker: Yhteinen rauha
+    title: Pidetään mökistä ja luonnosta huolta
+    intro: Varausvahvistuksen ehdot ovat aina ensisijaiset kohteen sääntöihin nähden.
+    tone: light
+    items:
+      - id: neighbours
+        title: Naapurit ja äänet
+        body: Kunnioita alueen rauhaa ja pidä etenkin ilta- ja yöaikaan musiikki sekä keskustelu sisätiloihin sopivalla tasolla.
+      - id: booking-rules
+        title: Tupakointi, lemmikit ja vieraat
+        body: Noudata oman varauksesi ehtoja. Jos jokin sääntö on epäselvä, varmista asia majoittajalta ennen kuin toimit.
+        badge: Tarkista varaus
+      - id: outdoors
+        title: Luonto ja piha
+        body: Älä jätä roskia luontoon. Avotulta saa tehdä vain sallituilla paikoilla ja ainoastaan silloin, kun voimassa ei ole metsä- tai ruohikkopalovaroitusta.
+  - id: departure
+    number: "04"
+    kicker: Ennen lähtöä
+    title: Jätä mökki hyvään huomiseen
+    intro: Tarkista varauksesi uloskirjautumisaika ja mahdolliset kohdekohtaiset siivousohjeet.
+    tone: dark
+    items:
+      - id: kitchen
+        title: Keittiö
+        body: Tiskaa tai käynnistä täysi astianpesukone varausohjeen mukaisesti. Tyhjennä omat ruoat ja pyyhi näkyvät roiskeet.
+      - id: waste
+        title: Roskat
+        body: Lajittele ja vie roskat varausviestissä osoitettuun paikkaan. Älä jätä jätteitä terassille tai pihalle eläinten ulottuville.
+      - id: final-check
+        title: Viimeinen kierros
+        body: Sammuta valot ja sähkölaitteet, sulje ikkunat sekä vesihanat ja tarkista, ettei saunaan tai takkaan jää lämpöä tai tulta.
+      - id: key
+        title: Ovet ja avain
+        body: Lukitse ovet ja palauta avain täsmälleen varausviestissä kerrotulla tavalla. Ilmoita lähdöstä varauskanavassa, jos ohje niin pyytää.
+emergency:
+  eyebrow: Hätätilanne
+  title: Toimi ensin, ilmoita sitten
+  number: "112"
+  body: Soita 112 vain todellisessa hätätilanteessa, kun henki, terveys, omaisuus tai ympäristö on vaarassa.
+  addressLabel: Mökin osoite
+  address: Keskitaalo 33B, 99130 Sirkka
+  steps:
+    - Kerro mitä on tapahtunut ja ilmoita mökin osoite.
+    - Vastaa kysymyksiin ja noudata hätäkeskuksen ohjeita.
+    - Älä katkaise puhelua ennen kuin saat luvan.
+  sourceLabel: Virallinen 112-ohje
+  sourceHref: https://www.suomi.fi/kansalaiselle/oikeudet-ja-osallistuminen-yhteiskuntaan/hatatilanteet-ja-turvallisuus/opas/nain-toimit-hatatilanteissa/hatatilanteessa-soita-112
+contact:
+  eyebrow: Tarvitsetko apua?
+  title: Majoittaja auttaa varauskanavassa
+  body: Kiireettömissä mökkiä, laitteita tai majoitusta koskevissa kysymyksissä lähetä viesti sen palvelun kautta, jossa varaus tehtiin.
+  note: Hätätilanteessa soita aina ensin 112.
+footer:
+  updatedLabel: Ohje tarkistettu
+  privacy: Tämä opas ei sisällä WiFi-tunnuksia, ovikoodeja tai henkilökohtaisia yhteystietoja.

@@ -1,0 +1,15 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { loadGuide, withBase } from "../lib/content";
+
+const content = loadGuide("fi");
+---
+
+<BaseLayout title="Sivua ei löytynyt | Keskitaalo 33B" description="Pyydettyä sivua ei löytynyt." locale="fi" page="guide" navigation={content.navigation}>
+  <section class="not-found shell">
+    <p class="eyebrow">404</p>
+    <h1>Polku päättyi tähän.</h1>
+    <p>Pyydettyä sivua ei löytynyt, mutta mökin opas odottaa aivan lähellä.</p>
+    <a class="button button-primary" href={withBase("/")}>Avaa mökin opas</a>
+  </section>
+</BaseLayout>

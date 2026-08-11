@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GuidePage from "../components/GuidePage.astro";
+import { loadGuide } from "../lib/content";
+
+const content = loadGuide("fi");
+---
+
+<BaseLayout title={content.meta.title} description={content.meta.description} locale="fi" page="guide" navigation={content.navigation}>
+  <GuidePage content={content} />
+</BaseLayout>

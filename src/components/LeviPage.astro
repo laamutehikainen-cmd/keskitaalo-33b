@@ -1,0 +1,109 @@
+---
+import type { LeviContent } from "../lib/content";
+import { withBase } from "../lib/content";
+
+interface Props {
+  content: LeviContent;
+}
+
+const { content } = Astro.props;
+const guideHref = withBase(content.locale === "fi" ? "/" : "/en/");
+---
+
+<section class="levi-hero">
+  <div class="shell levi-hero-layout">
+    <div>
+      <p class="eyebrow light">{content.hero.eyebrow}</p>
+      <h1>{content.hero.title}</h1>
+      <p>{content.hero.intro}</p>
+      <a class="button button-ghost" href={guideHref}><span aria-hidden="true">← </span>{content.hero.backLabel}</a>
+    </div>
+    <div class="sun-orbit" aria-hidden="true">
+      <span class="sun-disc"></span>
+      <span class="orbit orbit-one"></span>
+      <span class="orbit orbit-two"></span>
+      <span class="orbit orbit-three"></span>
+    </div>
+  </div>
+</section>
+
+<section class="seasons-section section-pad">
+  <div class="shell">
+    <div class="section-heading split-heading">
+      <div>
+        <p class="eyebrow">{content.locale === "fi" ? "Vuodenkierto" : "The turning year"}</p>
+        <h2>{content.seasonsTitle}</h2>
+      </div>
+      <p>{content.seasonsIntro}</p>
+    </div>
+    <div class="season-grid">
+      {content.seasons.map((season) => (
+        <article class:list={["season-card", `accent-${season.accent}`]}>
+          <span class="season-number">{season.number}</span>
+          <div class="season-symbol" aria-hidden="true"></div>
+          <h3>{season.title}</h3>
+          <p>{season.body}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="official-section section-pad">
+  <div class="shell">
+    <div class="section-heading narrow-heading">
+      <p class="eyebrow light">{content.locale === "fi" ? "Viralliset lähteet" : "Official sources"}</p>
+      <h2>{content.linksTitle}</h2>
+      <p>{content.linksIntro}</p>
+    </div>
+    <div class="official-links">
+      {content.links.map((link) => (
+        <a href={link.href} target="_blank" rel="noreferrer" class="official-link">
+          <span class="external-arrow" aria-hidden="true">↗</span>
+          <div>
+            <h3>{link.title}</h3>
+            <p>{link.body}</p>
+            <span class="text-link">{link.label}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<section class="nature-section section-pad">
+  <div class="shell nature-layout">
+    <div class="nature-heading">
+      <p class="eyebrow">{content.nature.eyebrow}</p>
+      <h2>{content.nature.title}</h2>
+      <p>{content.nature.intro}</p>
+    </div>
+    <div class="nature-list">
+      {content.nature.items.map((item, index) => (
+        <article>
+          <span class="nature-index">0{index + 1}</span>
+          <div>
+            <h3>{item.title}</h3>
+            <p>{item.body}</p>
+            {item.href && item.linkLabel && (
+              <a href={item.href} target="_blank" rel="noreferrer">{item.linkLabel}<span aria-hidden="true"> ↗</span></a>
+            )}
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <span class="footer-mark">33B</span>
+      <p>Keskitaalo · Levi</p>
+    </div>
+    <div>
+      <p>{content.footer.updatedLabel}: <time datetime={content.meta.updated}>{content.meta.updated}</time></p>
+      <p>{content.footer.privacy}</p>
+    </div>
+  </div>
+</footer>

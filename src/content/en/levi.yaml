@@ -1,0 +1,83 @@
+locale: en
+languageName: English
+meta:
+  title: Discover Levi | Keskitaalo 33B
+  description: Timeless ideas and official services for a memorable stay in Levi.
+  updated: 2026-08-11
+navigation:
+  guide: Cabin guide
+  levi: Discover Levi
+  language: Suomeksi
+  menu: Menu
+hero:
+  eyebrow: The fell in every season
+  title: Levi begins where the rush ends.
+  intro: >
+    Forest trails, fell landscapes and the services of Sirkka belong to the same holiday.
+    Find timeless ideas here, with direct links to information that stays current.
+  backLabel: Back to the cabin guide
+seasonsTitle: Four ways to experience the north
+seasonsIntro: Weather and seasons change quickly. Always check current trail, lift and service conditions from official sources before setting out.
+seasons:
+  - id: winter
+    number: "01"
+    title: Winter
+    body: Skiing, cross-country trails, winter walks and northern-light evenings bring brightness to the polar night. Dress in layers and keep your phone warm.
+    accent: snow
+  - id: spring
+    number: "02"
+    title: Spring snow
+    body: Long days and firm snow invite you outdoors. Sunglasses, water and a current route map belong in every pack.
+    accent: sun
+  - id: summer
+    number: "03"
+    title: Summer and autumn
+    body: Hike, cycle and enjoy the midnight sun or autumn colours. The weather can turn quickly even on a warm day.
+    accent: ember
+  - id: night
+    number: "04"
+    title: A quiet evening
+    body: Sometimes the best of Levi is found in the nearby forest, the warmth of the sauna and the moment the sky opens above the fell.
+    accent: night
+linksTitle: Current Levi information in your pocket
+linksIntro: These official pages provide current routes, services, warnings and seasonal conditions.
+links:
+  - id: maps
+    title: Maps and routes
+    body: Live trail services for skiing, cycling and walking, plus downloadable maps.
+    href: https://www.levi.fi/en/info/maps-and-routes/
+    label: Open Levi maps and routes
+  - id: activities
+    title: Activities
+    body: Find current experiences by season, interest and the people travelling with you.
+    href: https://www.levi.fi/en/activities/
+    label: Browse activities
+  - id: tourist-info
+    title: Tourist information
+    body: Local advice about routes, services, restaurants and ideas for your holiday.
+    href: https://www.levi.fi/en/info/openinghours/touristinformation/
+    label: Contact tourist information
+  - id: recycling
+    title: Responsible travel
+    body: Practical guidance for caring for Levi and sorting waste during your stay.
+    href: https://www.levi.fi/en/info/sustainable-levi/
+    label: Read responsible travel tips
+nature:
+  eyebrow: Safe in nature
+  title: The fell rewards preparation
+  intro: A little planning makes every trip more relaxed and helps keep northern nature beautiful.
+  items:
+    - id: route
+      title: Plan your route
+      body: Choose a route suitable for your group, tell someone your plan and carry a power bank or paper map alongside digital navigation.
+    - id: weather
+      title: Check weather and warnings
+      body: Dress in layers and prepare for change. Check forest and grass fire warnings before making any fire.
+      href: https://en.ilmatieteenlaitos.fi/warnings
+      linkLabel: Finnish Meteorological Institute warnings
+    - id: trace
+      title: Leave no trace
+      body: Stay on marked routes, keep your distance from animals and carry all litter out of nature.
+footer:
+  updatedLabel: Guide reviewed
+  privacy: External services and opening hours may change — always verify them with the service provider.

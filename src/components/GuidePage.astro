@@ -1,0 +1,156 @@
+---
+import type { GuideContent } from "../lib/content";
+import { withBase } from "../lib/content";
+
+interface Props {
+  content: GuideContent;
+}
+
+const { content } = Astro.props;
+const leviHref = withBase(content.locale === "fi" ? "/levi/" : "/en/levi/");
+---
+
+<section class="guide-hero">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="shell hero-layout">
+    <div class="hero-copy">
+      <p class="eyebrow light">{content.hero.eyebrow}</p>
+      <h1>{content.hero.title}</h1>
+      <p class="hero-subtitle">{content.hero.subtitle}</p>
+      <p class="hero-intro">{content.hero.intro}</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#essentials">{content.hero.primaryAction}</a>
+        <a class="button button-ghost" href={leviHref}>{content.hero.secondaryAction}<span aria-hidden="true"> ↗</span></a>
+      </div>
+    </div>
+
+    <div class="cabin-emblem" aria-hidden="true">
+      <div class="north-line">{content.hero.locationLabel}</div>
+      <div class="emblem-disc">
+        <span class="emblem-small">Keskitaalo</span>
+        <strong>33B</strong>
+        <span class="emblem-small">Levi · Finland</span>
+      </div>
+      <div class="fell-lines"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#essentials" aria-label={content.hero.primaryAction}>
+    <span aria-hidden="true">↓</span>
+  </a>
+</section>
+
+<section class="quick-guide section-pad" id="essentials">
+  <div class="shell">
+    <div class="section-heading split-heading">
+      <div>
+        <p class="eyebrow">{content.locale === "fi" ? "Pikaopas" : "Quick guide"}</p>
+        <h2>{content.quickTitle}</h2>
+      </div>
+      <p>{content.quickIntro}</p>
+    </div>
+    <div class="quick-grid">
+      {content.quickActions.map((action) => (
+        <a class="quick-card" href={`#${action.id}`}>
+          <span class="quick-number">{action.number}</span>
+          <span class="quick-arrow" aria-hidden="true">↘</span>
+          <h3>{action.title}</h3>
+          <p>{action.detail}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+{content.sections.slice(0, 2).map((section) => (
+  <section class:list={["guide-section", `tone-${section.tone}`]} id={section.id}>
+    <div class="shell section-layout">
+      <div class="section-marker" aria-hidden="true">{section.number}</div>
+      <div class="section-main">
+        <div class="section-heading">
+          <p class="eyebrow">{section.kicker}</p>
+          <h2>{section.title}</h2>
+          <p>{section.intro}</p>
+        </div>
+        <div class="instruction-grid">
+          {section.items.map((item) => (
+            <article class="instruction-card">
+              {item.badge && <span class="badge">{item.badge}</span>}
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+))}
+
+<section class="emergency-section" id="safety">
+  <div class="shell emergency-layout">
+    <div class="emergency-number" aria-label={`${content.emergency.number}`}>
+      <span>SOS</span>
+      <strong>{content.emergency.number}</strong>
+    </div>
+    <div class="emergency-content">
+      <p class="eyebrow light">{content.emergency.eyebrow}</p>
+      <h2>{content.emergency.title}</h2>
+      <p class="emergency-lead">{content.emergency.body}</p>
+      <div class="address-card">
+        <span>{content.emergency.addressLabel}</span>
+        <strong>{content.emergency.address}</strong>
+      </div>
+      <ol>
+        {content.emergency.steps.map((step) => <li>{step}</li>)}
+      </ol>
+      <a class="source-link" href={content.emergency.sourceHref} target="_blank" rel="noreferrer">
+        {content.emergency.sourceLabel}<span aria-hidden="true"> ↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+{content.sections.slice(2).map((section) => (
+  <section class:list={["guide-section", `tone-${section.tone}`]} id={section.id}>
+    <div class="shell section-layout">
+      <div class="section-marker" aria-hidden="true">{section.number}</div>
+      <div class="section-main">
+        <div class="section-heading">
+          <p class="eyebrow">{section.kicker}</p>
+          <h2>{section.title}</h2>
+          <p>{section.intro}</p>
+        </div>
+        <div class="instruction-grid">
+          {section.items.map((item) => (
+            <article class="instruction-card">
+              {item.badge && <span class="badge">{item.badge}</span>}
+              <h3>{item.title}</h3>
+              <p>{item.body}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+))}
+
+<section class="contact-section">
+  <div class="shell contact-card">
+    <p class="eyebrow">{content.contact.eyebrow}</p>
+    <h2>{content.contact.title}</h2>
+    <p>{content.contact.body}</p>
+    <strong>{content.contact.note}</strong>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <span class="footer-mark">33B</span>
+      <p>Keskitaalo · Levi</p>
+    </div>
+    <div>
+      <p>{content.footer.updatedLabel}: <time datetime={content.meta.updated}>{content.meta.updated}</time></p>
+      <p>{content.footer.privacy}</p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,134 @@
+locale: en
+languageName: English
+meta:
+  title: Keskitaalo 33B | Cabin guest guide
+  description: A bilingual guest guide for stays at Keskitaalo 33B in Levi.
+  updated: 2026-08-11
+navigation:
+  guide: Cabin guide
+  levi: Discover Levi
+  language: Suomeksi
+  menu: Menu
+hero:
+  eyebrow: Guest guide · Levi
+  title: Welcome to the quiet of the fell.
+  subtitle: Keskitaalo 33B
+  intro: >
+    Find the essential guidance for a comfortable stay, safe use of the cabin and an easy departure.
+    Your booking message is always the source for exact key and check-in details.
+  primaryAction: Start with the quick guide
+  secondaryAction: Discover Levi
+  locationLabel: 67°48′ N · Sirkka, Levi
+quickTitle: Everything essential at a glance
+quickIntro: Choose your situation — the same guidance is explained in more detail below.
+quickActions:
+  - id: arrival
+    number: "01"
+    title: Arrival
+    detail: Key, parking and your first moments.
+  - id: cabin
+    number: "02"
+    title: Using the cabin
+    detail: Heating, sauna, fireplace and kitchen.
+  - id: safety
+    number: "03"
+    title: Safety
+    detail: Address and what to do in an emergency.
+  - id: departure
+    number: "04"
+    title: Departure
+    detail: A calm and simple departure list.
+sections:
+  - id: arrival
+    number: "01"
+    kicker: When you arrive
+    title: Let your holiday begin gently
+    intro: Take a moment to review your booking message before settling in.
+    tone: light
+    items:
+      - id: key
+        title: Key and check-in
+        body: Check your booking message for the key collection or door code. Never share access details with anyone outside your party.
+        badge: Booking message
+      - id: parking
+        title: Parking
+        body: Follow the parking instructions in your booking message and keep access to neighbouring cabins and the emergency route clear.
+      - id: settle
+        title: Settling in
+        body: Check that doors and windows are intact. Report anything missing or damaged through the booking platform so it can be addressed promptly.
+  - id: cabin
+    number: "02"
+    kicker: Using the cabin
+    title: Warmth, sauna and time together
+    intro: Use appliances with care and leave their basic settings unchanged.
+    tone: soft
+    items:
+      - id: heating
+        title: Heating
+        body: Keep radiators and thermostats at their current settings. If the cabin feels unusually cold or hot, contact the host through the booking platform.
+      - id: sauna
+        title: Sauna
+        body: Never dry textiles in the sauna or cover the heater. Switch the heater off after use and make sure no flammable items remain in the sauna room.
+      - id: fireplace
+        title: Fireplace
+        body: Use only the firewood provided for the cabin, keep the door closed and never leave a fire unattended. Ask for exact instructions before lighting it if you are unsure.
+      - id: kitchen
+        title: Kitchen and dishes
+        body: Follow the markings on each appliance. Never leave the oven or hob unattended, and only run the dishwasher while you are at the cabin.
+  - id: rules
+    number: "03"
+    kicker: Shared peace
+    title: Care for the cabin and the surrounding nature
+    intro: The conditions in your own booking confirmation always take priority for property-specific rules.
+    tone: light
+    items:
+      - id: neighbours
+        title: Neighbours and noise
+        body: Respect the calm of the area. Keep music and conversation at a considerate indoor level, especially during the evening and night.
+      - id: booking-rules
+        title: Smoking, pets and visitors
+        body: Follow the terms of your reservation. If a rule is unclear, confirm it with the host before acting.
+        badge: Check your booking
+      - id: outdoors
+        title: Nature and the yard
+        body: Leave no litter outdoors. Make a fire only at designated sites and never when a forest or grass fire warning is in effect.
+  - id: departure
+    number: "04"
+    kicker: Before departure
+    title: Leave the cabin ready for tomorrow
+    intro: Check your departure time and any property-specific cleaning instructions in the booking confirmation.
+    tone: dark
+    items:
+      - id: kitchen
+        title: Kitchen
+        body: Wash the dishes or start a full dishwasher as instructed in your booking. Remove your own food and wipe away visible spills.
+      - id: waste
+        title: Waste
+        body: Sort and take rubbish to the place named in the booking message. Never leave waste on the terrace or outdoors where animals can reach it.
+      - id: final-check
+        title: Final check
+        body: Switch off lights and appliances, close windows and taps, and make sure no heat or fire remains in the sauna or fireplace.
+      - id: key
+        title: Doors and key
+        body: Lock the doors and return the key exactly as instructed in your booking message. Confirm departure through the platform if requested.
+emergency:
+  eyebrow: Emergency
+  title: Act first, notify afterwards
+  number: "112"
+  body: Call 112 only in a real emergency when life, health, property or the environment is in danger.
+  addressLabel: Cabin address
+  address: Keskitaalo 33B, 99130 Sirkka
+  steps:
+    - Explain what has happened and give the cabin address.
+    - Answer the operator's questions and follow their instructions.
+    - Do not end the call until you are told to do so.
+  sourceLabel: Official 112 guidance
+  sourceHref: https://www.suomi.fi/citizen/rights-and-obligations/emergencies-and-security/guide/what-to-do-in-an-emergency/call-112-in-an-emergency
+contact:
+  eyebrow: Need help?
+  title: Your host is available through the booking platform
+  body: For non-urgent questions about the cabin, its appliances or your stay, send a message through the service where you made the booking.
+  note: In an emergency, always call 112 first.
+footer:
+  updatedLabel: Guide reviewed
+  privacy: This guide contains no WiFi credentials, door codes or personal contact details.
