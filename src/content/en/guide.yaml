@@ -73,13 +73,15 @@ sections:
           - Return ventilation to its normal basic setting afterwards.
       - id: sauna
         title: Sauna
-        body: The sauna has a standard electric heater operated from its control panel.
+        body: The sauna has a standard electric heater with a mechanical timer switch and thermostat. Operate the heater only while using the sauna.
         steps:
           - Before switching it on, make sure there are no textiles or other items on or close to the heater.
-          - Switch the heater on at the panel and choose a suitable sauna temperature. Do not use delayed starting.
+          - Turn the timer switch to the 0–4 hour operating range. The heater starts heating. Do not use delayed starting or the timer's preset range.
+          - Adjust the heater output with the thermostat. If the sauna becomes uncomfortably hot, turn the thermostat control counterclockwise. If the temperature remains too low, turn it clockwise.
           - Increase the mechanical ventilation from the cooker hood control while using the sauna.
-          - Pour water moderately and only onto the sauna stones. Keep water away from electrical parts and the control panel.
-          - Switch the heater off after use and leave the sauna door ajar while the room dries.
+          - Pour water moderately and only onto the sauna stones. Keep water away from electrical parts, the timer switch and the thermostat.
+          - The heater switches off when the timer mechanism returns the timer switch to 0. You can switch it off at any time by turning the timer control manually to 0.
+          - After using the sauna, make sure the timer switch is at 0. Leave the sauna door ajar while the room dries.
       - id: fireplace
         title: Fireplace, damper and ashes
         body: Prepare the ventilation and fireplace before every fire. Never leave a fire unattended.

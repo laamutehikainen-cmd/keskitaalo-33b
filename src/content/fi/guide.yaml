@@ -73,13 +73,15 @@ sections:
           - Palauta ilmanvaihto normaalille perusasetukselle käytön jälkeen.
       - id: sauna
         title: Sauna
-        body: Saunassa on tavallinen sähkökiuas, jota käytetään käyttöpaneelista.
+        body: Saunassa on tavallinen sähkökiuas, jossa on mekaaninen kellokytkin ja termostaatti. Käytä kiuasta vain saunomisen aikana.
         steps:
           - Tarkista ennen käynnistystä, ettei kiukaan päällä tai lähellä ole tekstiilejä tai muuta tavaraa.
-          - Käynnistä kiuas paneelista ja valitse sopiva saunomislämpötila. Älä käytä ajastettua käynnistystä.
+          - Kierrä kellokytkimen säädin toiminta-alueelle 0–4 tuntia. Kiuas alkaa lämmetä. Älä käytä ajastettua käynnistystä tai kellokytkimen esivalinta-aluetta.
+          - Säädä kiukaan lämmitystehoa termostaatilla. Jos lämpötila nousee epämiellyttävän korkeaksi, käännä termostaatin säädintä vastapäivään. Jos lämpötila jää liian matalaksi, käännä säädintä myötäpäivään.
           - Tehosta koneellista ilmanvaihtoa saunomisen ajaksi liesikuvun säätimestä.
-          - Heitä vettä vain kiuaskiville maltillisesti. Älä kastele sähköosia tai käyttöpaneelia.
-          - Sammuta kiuas saunomisen jälkeen ja jätä saunan ovi raolleen kuivumisen ajaksi.
+          - Heitä vettä vain kiuaskiville maltillisesti. Älä kastele sähköosia, kellokytkintä tai termostaattia.
+          - Kiuas kytkeytyy pois päältä, kun kellokoneisto palauttaa kellokytkimen säätimen 0-kohtaan. Voit sammuttaa kiukaan milloin tahansa kiertämällä säätimen käsin 0-kohtaan.
+          - Varmista saunomisen jälkeen, että kellokytkin on 0-asennossa. Jätä saunan ovi raolleen kuivumisen ajaksi.
       - id: fireplace
         title: Takka, pellit ja tuhkat
         body: Valmistele ilmanvaihto ja takka ennen jokaista sytytystä. Älä jätä tulta koskaan ilman valvontaa.
