@@ -5,112 +5,164 @@ meta:
   description: A bilingual guest guide for stays at Keskitaalo 33B in Levi.
   updated: 2026-08-11
 navigation:
-  guide: Cabin guide
+  guide: Cabin instructions
   levi: Discover Levi
-  language: Suomeksi
+  language: FI / EN
   menu: Menu
 hero:
   eyebrow: Guest guide · Levi
   title: Welcome to the quiet of the fell.
   subtitle: Keskitaalo 33B
   intro: >
-    Find the essential guidance for a comfortable stay, safe use of the cabin and an easy departure.
-    Your booking message is always the source for exact key and check-in details.
-  primaryAction: Start with the quick guide
+    This guide brings together the essential instructions for Keskitaalo 33B,
+    including safe use of the sauna and fireplace and a simple departure checklist.
+  primaryAction: Cabin instructions
   secondaryAction: Discover Levi
   locationLabel: 67°48′ N · Sirkka, Levi
-quickTitle: Everything essential at a glance
-quickIntro: Choose your situation — the same guidance is explained in more detail below.
+quickTitle: Cabin instructions
+quickIntro: Go straight to the guidance you need. Appliance-specific photographs and exact controls will be added in the next update.
 quickActions:
-  - id: arrival
+  - id: parking
     number: "01"
-    title: Arrival
-    detail: Key, parking and your first moments.
+    title: Parking
+    detail: The parking space is directly in front of the cabin.
   - id: cabin
     number: "02"
-    title: Using the cabin
-    detail: Heating, sauna, fireplace and kitchen.
-  - id: safety
+    title: Sauna and fireplace
+    detail: Ventilation, electric heater, damper and ashes.
+  - id: appliances
     number: "03"
-    title: Safety
-    detail: Address and what to do in an emergency.
+    title: Appliances
+    detail: Drying cabinet, dishwasher and washing machine.
   - id: departure
     number: "04"
     title: Departure
-    detail: A calm and simple departure list.
+    detail: A simple final check before locking the door.
 sections:
-  - id: arrival
+  - id: parking
     number: "01"
-    kicker: When you arrive
-    title: Let your holiday begin gently
-    intro: Take a moment to review your booking message before settling in.
+    kicker: Parking
+    title: Park in front of the cabin
+    intro: There is one parking space directly in front of the cabin.
     tone: light
     items:
-      - id: key
-        title: Key and check-in
-        body: Check your booking message for the key collection or door code. Never share access details with anyone outside your party.
-        badge: Booking message
       - id: parking
-        title: Parking
-        body: Follow the parking instructions in your booking message and keep access to neighbouring cabins and the emergency route clear.
-      - id: settle
-        title: Settling in
-        body: Check that doors and windows are intact. Report anything missing or damaged through the booking platform so it can be addressed promptly.
+        title: Where to park
+        body: Park on the gravel area directly in front of the cabin.
+        steps:
+          - Keep the route to the cabin door clear.
+          - Do not block the driveway, access to neighbouring cabins or the emergency route.
+          - In winter, leave room for snow clearing and keep the car clearly within the parking area.
   - id: cabin
     number: "02"
-    kicker: Using the cabin
-    title: Warmth, sauna and time together
-    intro: Use appliances with care and leave their basic settings unchanged.
+    kicker: Warmth, air and fire
+    title: Use the sauna and fireplace safely
+    intro: The mechanical extract ventilation affects both sauna drying and fireplace draught. Read the ventilation and fireplace guidance together.
     tone: soft
     items:
       - id: heating
         title: Heating
-        body: Keep radiators and thermostats at their current settings. If the cabin feels unusually cold or hot, contact the host through the booking platform.
+        body: Normally, leave radiators and thermostats at their current settings. Never cover radiators or dry clothes on them.
+        note: Recommended thermostat settings and any underfloor heating controls will be specified later.
+      - id: ventilation
+        title: Mechanical ventilation
+        body: The cabin's extract ventilation is controlled from the cooker hood. Normally, keep it at its basic setting.
+        steps:
+          - Increase ventilation while using the sauna and while the sauna is drying.
+          - When lighting the fireplace, open at least one ventilation window or set the cooker hood ventilation to zero.
+          - Do not use strong extraction while lighting the fireplace, as negative pressure may draw smoke indoors.
+          - Return ventilation to its normal basic setting afterwards.
+        note: Photographs of the cooker hood controls and exact settings will be added later.
       - id: sauna
         title: Sauna
-        body: Never dry textiles in the sauna or cover the heater. Switch the heater off after use and make sure no flammable items remain in the sauna room.
+        body: The sauna has a standard electric heater operated from its control panel.
+        steps:
+          - Before switching it on, make sure there are no textiles or other items on or close to the heater.
+          - Switch the heater on at the panel and choose a suitable sauna temperature. Do not use delayed starting until exact instructions have been added.
+          - Increase the mechanical ventilation from the cooker hood control while using the sauna.
+          - Pour water moderately and only onto the sauna stones. Keep water away from electrical parts and the control panel.
+          - Switch the heater off after use and leave the sauna door ajar while the room dries.
+        note: The panel buttons and recommended settings will be documented with photographs later.
       - id: fireplace
-        title: Fireplace
-        body: Use only the firewood provided for the cabin, keep the door closed and never leave a fire unattended. Ask for exact instructions before lighting it if you are unsure.
-      - id: kitchen
-        title: Kitchen and dishes
-        body: Follow the markings on each appliance. Never leave the oven or hob unattended, and only run the dishwasher while you are at the cabin.
-  - id: rules
+        title: Fireplace, damper and ashes
+        body: Prepare the ventilation and fireplace before every fire. Never leave a fire unattended.
+        steps:
+          - Remove ashes before heating only when they are completely cool. Empty them into the metal container in front of the cabin.
+          - Open the chimney damper fully before lighting the fire.
+          - While lighting, open at least one ventilation window or set the cooker hood ventilation to zero.
+          - Use only the dry firewood provided, burn a moderate load and keep the fireplace door closed.
+          - Never close the damper while anything in the fireplace is burning, glowing or smouldering. Close it only after the fire and embers are completely out.
+          - Never move hot ashes or embers into the metal container.
+        note: Photographs of the damper, ventilation window, ventilation control and ash container will be added later.
+  - id: appliances
     number: "03"
+    kicker: Appliances
+    title: Drying and washing
+    intro: Operate appliances only while you are at the cabin. Choose a programme suitable for the textiles, dishes or laundry.
+    tone: light
+    items:
+      - id: drying-cabinet
+        title: Drying cabinet
+        body: Check each garment's care label before using the drying cabinet.
+        steps:
+          - Shake out wet clothes and hang them loosely so air can circulate.
+          - Never dry textiles contaminated with oil, fuel or other flammable substances.
+          - Close the doors and select a moderate temperature and suitable drying time from the panel.
+          - Switch the cabinet off after use and never leave it running when you leave the cabin.
+        note: Panel buttons, programmes and recommended times will be specified for the exact appliance model.
+      - id: dishwasher
+        title: Dishwasher
+        body: Remove food scraps and make sure the spray arms can rotate freely before starting the machine.
+        steps:
+          - Load dishes so they do not block the spray arms or detergent compartment.
+          - Use dishwasher detergent only. Never use washing-up liquid intended for hand washing.
+          - Choose a normal wash programme and start only after the door is properly closed.
+          - Run the machine only while you are at the cabin and leave the clean machine slightly open afterwards.
+        note: Programme selection and the start button will be documented with photographs.
+      - id: washing-machine
+        title: Washing machine
+        body: Empty pockets, close zips and follow each textile's care label.
+        steps:
+          - Do not overload the drum. Use washing-machine detergent in the correct compartment.
+          - Choose a programme and temperature suitable for the textiles.
+          - Make sure the door is closed before starting. Never force open a locked door.
+          - Run the machine only while you are at the cabin and leave the door ajar after washing so it can dry.
+        note: Detergent compartments, programmes and starting controls will be specified for the exact appliance model.
+  - id: rules
+    number: "04"
     kicker: Shared peace
     title: Care for the cabin and the surrounding nature
-    intro: The conditions in your own booking confirmation always take priority for property-specific rules.
-    tone: light
+    intro: These instructions apply specifically to Keskitaalo 33B.
+    tone: soft
     items:
       - id: neighbours
         title: Neighbours and noise
         body: Respect the calm of the area. Keep music and conversation at a considerate indoor level, especially during the evening and night.
-      - id: booking-rules
+      - id: smoking-pets-guests
         title: Smoking, pets and visitors
-        body: Follow the terms of your reservation. If a rule is unclear, confirm it with the host before acting.
-        badge: Check your booking
+        body: Smoking inside the cabin is prohibited. Guidance concerning pets and visitors who are not staying at the cabin will be specified later.
       - id: outdoors
         title: Nature and the yard
         body: Leave no litter outdoors. Make a fire only at designated sites and never when a forest or grass fire warning is in effect.
   - id: departure
-    number: "04"
+    number: "05"
     kicker: Before departure
     title: Leave the cabin ready for tomorrow
-    intro: Check your departure time and any property-specific cleaning instructions in the booking confirmation.
+    intro: Complete a calm final check. The departure time and exact key return procedure will be added to this guide.
     tone: dark
     items:
       - id: kitchen
         title: Kitchen
-        body: Wash the dishes or start a full dishwasher as instructed in your booking. Remove your own food and wipe away visible spills.
+        body: Wash the dishes or start a full dishwasher. Remove your own food and wipe away visible spills.
       - id: waste
         title: Waste
-        body: Sort and take rubbish to the place named in the booking message. Never leave waste on the terrace or outdoors where animals can reach it.
+        body: Sort and take rubbish to the correct bins. Exact sorting and waste collection guidance will be added later.
       - id: final-check
         title: Final check
-        body: Switch off lights and appliances, close windows and taps, and make sure no heat or fire remains in the sauna or fireplace.
+        body: Switch off lights and appliances, close windows and taps, and make sure the sauna heater is off. No fire or smouldering embers may remain in the fireplace, and the damper must not be closed while combustion continues.
       - id: key
         title: Doors and key
-        body: Lock the doors and return the key exactly as instructed in your booking message. Confirm departure through the platform if requested.
+        body: Close and lock the doors when leaving. The exact key return procedure will be added to this guide.
 emergency:
   eyebrow: Emergency
   title: Act first, notify afterwards

@@ -32,18 +32,30 @@ const languageHref = withBase(
     <nav class="desktop-nav" aria-label={locale === "fi" ? "Päänavigaatio" : "Main navigation"}>
       <a href={guideHref} aria-current={page === "guide" ? "page" : undefined}>{navigation.guide}</a>
       <a href={leviHref} aria-current={page === "levi" ? "page" : undefined}>{navigation.levi}</a>
-      <a class="language-link" href={languageHref} lang={locale === "fi" ? "en" : "fi"}>
-        {navigation.language}<span aria-hidden="true"> ↗</span>
-      </a>
     </nav>
 
-    <details class="mobile-nav">
-      <summary>{navigation.menu}<span class="menu-lines" aria-hidden="true"></span></summary>
-      <nav aria-label={locale === "fi" ? "Mobiilinavigaatio" : "Mobile navigation"}>
-        <a href={guideHref} aria-current={page === "guide" ? "page" : undefined}>{navigation.guide}</a>
-        <a href={leviHref} aria-current={page === "levi" ? "page" : undefined}>{navigation.levi}</a>
-        <a href={languageHref} lang={locale === "fi" ? "en" : "fi"}>{navigation.language}</a>
-      </nav>
-    </details>
+    <div class="header-actions">
+      <div class="language-switch" aria-label={locale === "fi" ? "Kielivalinta" : "Language selection"}>
+        {locale === "fi" ? (
+          <>
+            <span aria-current="true">FI</span>
+            <a href={languageHref} lang="en" aria-label="View this page in English">EN</a>
+          </>
+        ) : (
+          <>
+            <a href={languageHref} lang="fi" aria-label="Näytä tämä sivu suomeksi">FI</a>
+            <span aria-current="true">EN</span>
+          </>
+        )}
+      </div>
+
+      <details class="mobile-nav">
+        <summary>{navigation.menu}<span class="menu-lines" aria-hidden="true"></span></summary>
+        <nav aria-label={locale === "fi" ? "Mobiilinavigaatio" : "Mobile navigation"}>
+          <a href={guideHref} aria-current={page === "guide" ? "page" : undefined}>{navigation.guide}</a>
+          <a href={leviHref} aria-current={page === "levi" ? "page" : undefined}>{navigation.levi}</a>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>

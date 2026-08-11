@@ -46,7 +46,10 @@ const leviHref = withBase(content.locale === "fi" ? "/levi/" : "/en/levi/");
         <p class="eyebrow">{content.locale === "fi" ? "Pikaopas" : "Quick guide"}</p>
         <h2>{content.quickTitle}</h2>
       </div>
-      <p>{content.quickIntro}</p>
+      <div class="quick-intro">
+        <p>{content.quickIntro}</p>
+        <a href="#safety">{content.emergency.eyebrow}: {content.emergency.number}</a>
+      </div>
     </div>
     <div class="quick-grid">
       {content.quickActions.map((action) => (
@@ -61,7 +64,7 @@ const leviHref = withBase(content.locale === "fi" ? "/levi/" : "/en/levi/");
   </div>
 </section>
 
-{content.sections.slice(0, 2).map((section) => (
+{content.sections.map((section) => (
   <section class:list={["guide-section", `tone-${section.tone}`]} id={section.id}>
     <div class="shell section-layout">
       <div class="section-marker" aria-hidden="true">{section.number}</div>
@@ -71,12 +74,24 @@ const leviHref = withBase(content.locale === "fi" ? "/levi/" : "/en/levi/");
           <h2>{section.title}</h2>
           <p>{section.intro}</p>
         </div>
+        {section.image && (
+          <figure class="section-image">
+            <img src={withBase(section.image.src)} alt={section.image.alt} loading="lazy" />
+            {section.image.caption && <figcaption>{section.image.caption}</figcaption>}
+          </figure>
+        )}
         <div class="instruction-grid">
           {section.items.map((item) => (
-            <article class="instruction-card">
+            <article id={`${section.id}-${item.id}`} class:list={["instruction-card", item.steps && "instruction-card-detailed"]}>
               {item.badge && <span class="badge">{item.badge}</span>}
               <h3>{item.title}</h3>
               <p>{item.body}</p>
+              {item.steps && (
+                <ol class="instruction-steps">
+                  {item.steps.map((step) => <li>{step}</li>)}
+                </ol>
+              )}
+              {item.note && <p class="instruction-note">{item.note}</p>}
             </article>
           ))}
         </div>
@@ -92,7 +107,7 @@ const leviHref = withBase(content.locale === "fi" ? "/levi/" : "/en/levi/");
       <strong>{content.emergency.number}</strong>
     </div>
     <div class="emergency-content">
-      <p class="eyebrow light">{content.emergency.eyebrow}</p>
+      <p class="eyebrow">{content.emergency.eyebrow}</p>
       <h2>{content.emergency.title}</h2>
       <p class="emergency-lead">{content.emergency.body}</p>
       <div class="address-card">
@@ -108,30 +123,6 @@ const leviHref = withBase(content.locale === "fi" ? "/levi/" : "/en/levi/");
     </div>
   </div>
 </section>
-
-{content.sections.slice(2).map((section) => (
-  <section class:list={["guide-section", `tone-${section.tone}`]} id={section.id}>
-    <div class="shell section-layout">
-      <div class="section-marker" aria-hidden="true">{section.number}</div>
-      <div class="section-main">
-        <div class="section-heading">
-          <p class="eyebrow">{section.kicker}</p>
-          <h2>{section.title}</h2>
-          <p>{section.intro}</p>
-        </div>
-        <div class="instruction-grid">
-          {section.items.map((item) => (
-            <article class="instruction-card">
-              {item.badge && <span class="badge">{item.badge}</span>}
-              <h3>{item.title}</h3>
-              <p>{item.body}</p>
-            </article>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-))}
 
 <section class="contact-section">
   <div class="shell contact-card">

@@ -20,6 +20,8 @@ const itemSchema = z.object({
   title: z.string().min(1),
   body: z.string().min(1),
   badge: z.string().optional(),
+  steps: z.array(z.string().min(1)).optional(),
+  note: z.string().min(1).optional(),
   href: z.url().optional(),
   linkLabel: z.string().optional()
 });
@@ -31,6 +33,11 @@ const sectionSchema = z.object({
   title: z.string().min(1),
   intro: z.string().min(1),
   tone: z.enum(["light", "soft", "dark"]).default("light"),
+  image: z.object({
+    src: z.string().min(1),
+    alt: z.string().min(1),
+    caption: z.string().min(1).optional()
+  }).optional(),
   items: z.array(itemSchema).min(1)
 });
 
