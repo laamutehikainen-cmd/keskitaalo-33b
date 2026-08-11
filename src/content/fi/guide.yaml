@@ -81,7 +81,8 @@ sections:
           - Tehosta koneellista ilmanvaihtoa saunomisen ajaksi liesikuvun säätimestä.
           - Heitä vettä vain kiuaskiville maltillisesti. Älä kastele sähköosia, kellokytkintä tai termostaattia.
           - Kiuas kytkeytyy pois päältä, kun kellokoneisto palauttaa kellokytkimen säätimen 0-kohtaan. Voit sammuttaa kiukaan milloin tahansa kiertämällä säätimen käsin 0-kohtaan.
-          - Varmista saunomisen jälkeen, että kellokytkin on 0-asennossa. Jätä saunan ovi raolleen kuivumisen ajaksi.
+          - Saunomisen jälkeen voit pitää kiuasta päällä vielä noin 30 minuuttia kuivumisen tehostamiseksi. Pidä saunan ovi suljettuna, jotta kosteus ei siirry pesuhuoneeseen, ja pidä ilmanvaihto tehostettuna kuivumisen ajan.
+          - Kuivauksen jälkeen varmista, että kellokytkin on 0-asennossa ja kiuas on pois päältä. Älä jätä kiuasta päälle mökiltä poistuessasi.
       - id: fireplace
         title: Takka, pellit ja tuhkat
         body: Valmistele ilmanvaihto ja takka ennen jokaista sytytystä. Älä jätä tulta koskaan ilman valvontaa.
